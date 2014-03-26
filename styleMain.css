@@ -52,8 +52,8 @@ a {
 			.designer-name:after, footer a:after { height: 1px; }
 
 
-.select:after { content: "Links"; font-size: 1.8rem; text-align: center; width: 7em; margin: 0 auto 2em; no-repeat 50% 0; padding: 2em 0 0; color: #FF0000; visibility: visible; position:absolute; left:0px; top:20px;}
-
+/*.select:after { content: "Links"; font-size: 1.8rem; text-align: center; width: 7em; margin: 0 auto 2em; no-repeat 50% 0; padding: 2em 0 0; color: #FF0000; visibility: visible; position:absolute; left:0px; top:20px;}
+*/
 footer { font-size: 1.3rem; }
 	footer a { margin-left: 1em; }
 	footer a:first-child { margin-left: 0; }
