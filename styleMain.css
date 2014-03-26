@@ -1,0 +1,135 @@
+/*Global*/
+* { margin: 0; padding: 0; }
+html { font-size: 62.5%; } /* rems font */
+body { font-family: Helvetica, Arial, sans-serif; color: #FFFFFF; no-repeat 50% 350px; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; background-image:url("img/scrn1.jpg");}
+
+h1 { font: bold 4.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+
+p, ul, dl, ol, table { font-size: 16px; margin: 0 0 1.5em; }
+
+a { 
+	text-decoration: none; color: #FFFFFF; position: relative; 
+	    transition: all 0.25s linear;
+   -moz-transition: all 0.25s linear;
+-webkit-transition: all 0.25s linear;
+	 -o-transition: all 0.25s linear;
+}
+
+/*Modules*/
+.page-wrapper { width: 90%; margin: 0 auto; }
+
+.main h3, .preamble h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #263358; }
+.wf-active .main h3, .wf-active .preamble h3 { font-weight: 900; }
+
+.main h3:after, .preamble h3:after/*, .select:after */{ visibility: visible; display: block; }
+
+.main p, .preamble p { font-size: 2rem; }
+.wf-active .main p, .wf-active .preamble p { line-height: 1.4; }
+
+/*Banner*/
+[role="banner"] 
+ { padding: 1em 0 0; text-transform: uppercase; letter-spacing: 0.1em; font-size: 3.5rem; font-weight: 900; color: #FF0000; visibility: hidden; }
+[role="banner"] h1:before { content: "Populum"; visibility: visible; display: block; }
+[role="banner"] h1:after { content: "A Life Outisde Your Own"; visibility: visible; display: block; color: #FF0000; letter-spacing: 0.5em; font-size: 1.4rem; font-weight: normal; margin: 0.5em 0 3em; }
+
+/*Summary*/
+.summary p { text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.8rem; line-height: 1.6; }
+
+/*Scaleable view*/
+.design-selection { margin: 3em 0 0; }
+	.design-selection ul { list-style: none; width: 94%; margin: 0 auto; }
+	.design-selection ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+		.design-selection li { float: left; width: 50%; font-size: 1.2rem; margin: 0 0 1em; color: #aaa; }
+		.design-selection li:nth-child(odd) { width: 47%; padding-right: 3%; clear: left; }
+
+			.design-name { display: block; font-size: 1.4rem; font-weight: bold; margin: 0 0 0.24em; text-transform: uppercase; letter-spacing: 0.1em; position: relative; }
+			.design-name:after { background: none; opacity: 0; }
+			.design-name:hover { font-style: italic; }
+
+			.designer-name { color: #7989a3; }
+			.designer-name:after, footer a:after { height: 1px; }
+
+
+.select:after { content: "Links"; font-size: 1.8rem; text-align: center; width: 7em; margin: 0 auto 2em; no-repeat 50% 0; padding: 2em 0 0; color: #FF0000; visibility: visible; position:absolute; left:0px; top:20px;}
+
+footer { font-size: 1.3rem; }
+	footer a { margin-left: 1em; }
+	footer a:first-child { margin-left: 0; }
+	
+@media screen and (min-width: 700px) {
+
+	body { background-attachment: fixed; background-position: 90% 80%; }
+	
+	[role="banner"]{ padding: 0 50% 10em 10%; text-align: right; position: relative; }
+
+	[role="article"], footer { padding: 0 30% 10em 10%; text-align: right; position: relative; }
+
+	[role="banner"] { padding-top: 100px; padding-bottom: 3em; }
+
+		[role="banner"] h1 { font-size: 4.8rem; letter-spacing: 0; line-height: 0.8; }
+		[role="banner"] h1:after { position: absolute; top: 10em; right: 40%; }
+
+	.preamble { padding-top: 10em; }
+		.preamble h3 { top: 5.9em; }
+
+	.design-selection li { width: 23%; margin-bottom: 3em; padding-right: 2%; }
+	.design-selection li:nth-child(odd) { width: 23%; clear: none; padding-right: 2%; }
+
+	.next { margin-right: 2em; margin-left: -0.4em; }
+	.viewall { margin-left: 0; }
+
+	footer { padding-bottom: 3em; margin-top: -8em; }
+}
+
+@media screen and (min-width: 1130px) {
+	[role="script"] { padding-left: 25%; }
+	[role="article"], [role="banner"] { padding-left: 25%; }
+
+	.design-selection { position: absolute; left: 5%; top: 30em; }
+		.design-selection ul { margin: 0; width: 100%; }
+			.design-selection li { float: none; width: 100% !important; padding: 0 !important; margin-bottom: 2em;}
+		.select:after { text-align: left; padding: 0 0 2em; margin: 0 0 2em; }
+
+	.design-archives { position: absolute; left: 5%; top: 95em; }
+}
+
+@media screen and (min-width: 1130px) and (min-height: 1037px)  {
+	.design-selection, .design-archives { position: fixed; }
+}
+
+/*Animations*/
+@-webkit-keyframes FADEY {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.intro { 
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1s; 
+	-webkit-animation-timing-function: ease-in-out; 
+	-webkit-animation-iteration-count: 1;
+}
+
+
+[role="article"] {
+	-webkit-opacity: 0;
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1s; 
+	-webkit-animation-timing-function: ease-in-out; 
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+}
+
+
+.design-selection, .design-archives {
+	-webkit-opacity: 0;
+	-webkit-animation-name: FADEY;
+	-webkit-animation-duration: 1s; 
+	-webkit-animation-timing-function: ease-in-out; 
+	-webkit-animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+}

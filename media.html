@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+		<meta charset="utf-8">
+		<title>Populum</title>
+
+		<link rel="stylesheet" media="screen" href="styleMain.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Chester Holtz">
+		<meta name="description" content="A Hub-based Massively Multiplayer Online Role Playing Game.">
+		
+	</head>
+
+	<body>
+
+		<div class="page-wrapper">
+			<section class="intro" id="intro" role="intro">
+				<header role="banner">
+					<h1>Populum: A Life Outside Your Own</h1>
+				</header>
+
+				<div class="summary" id="summary" role="article">
+					<p>A Hub-based Massively Multiplayer Online Role Playing Game with Life Simulation Elements and a player focused community.</p>
+				</div>
+
+			<section class="script" id="script" role="script">		
+				<script language="JavaScript"> 
+					var i = 0; var pic = new Array(); 
+					pic[0] = "img/scrn1.jpg"; 
+					pic[1] = "img/scrn2.jpg"; 
+					pic[2] = "img/scrn3.jpg"; 
+
+					function swapImage(){ 
+						document.slide.src = pic[i]; 
+						if(i < pic.length - 1) i++; 
+						else i = 0; 
+						setTimeout("swapImage()",3000); 
+					} 
+					window.onload=swapImage; 
+				</script> 
+				<img height="400" name="slide" src="image_1.gif" width="800" style="border:5px solid black"/>
+		</div>
+
+		<div class="preamble" id="preamble" role="article">
+			<h3>The Road to Enlightenment</h3>
+			<p>Populum is an online Social Role-Playing Service (SRPS). It is named from the Latin word for people: "Populus". 
+			In other words, the program name “Populum” represents the fundamental group/unit of people who compose a society.
+			In this simulation, people will be able to live second lives in a massive virtual world consists of economic and social 
+			systems driven completely by its inhabitants: YOU.</p>
+		</div>
+
+		<div class="footer" id="footer" role="footer">
+			<footer>
+				<a href="javascript:emailScript();">contact</a>
+				<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="license">CC</a>
+			
+				<script>
+					function emailScript(){
+						alert("Email: chester.holtz@yahoo.com\nSubject: [name] - subject_title");
+					}
+				</script>
+			</footer>
+		</div>
+
+		<aside class="sidebar" role="complementary">
+			<div class="wrapper">
+				<div class="design-selection" id="design-selection">
+					<h3 class="select">Select a Link:</h3>
+					<nav role="navigation">
+						<ul>
+						<li>
+							<a href="index.html" class="design-name">About</a> about the project
+						</li>					<li>
+							<a href="media.html" class="design-name">Media</a> screenshots and videos
+						</li>					<li>
+							<a href="team.html" class="design-name">The Team</a> member bios
+						</li>					<li>
+							<a href="donate.html" class="design-name">Manual</a> installation and gameplay manual
+						</li>						</ul>
+					</nav>
+				</div>
+			</div>
+		</aside>
+
+		<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+		<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+
+	</body>
+</html>
