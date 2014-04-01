@@ -106,10 +106,23 @@ footer { font-size: 1.3rem; }
 }
 
 .intro { 
-	-webkit-animation-name: FADEY;
+/*	-webkit-animation-name: FADEY;
 	-webkit-animation-duration: 1s; 
 	-webkit-animation-timing-function: ease-in-out; 
 	-webkit-animation-iteration-count: 1;
+*/
+   -webkit-animation-name: FADEY;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-timing-function: ease-in-out;
+   -webkit-animation-iteration-count: 1;
+   -moz-animation-name: FADEY;
+   -moz-animation-duration: 1s;
+   -moz-animation-timing-function: ease-in-out;
+   -moz-animation-iteration-count: 1;
+   animation-name: FADEY;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: 1;
 }
 
 
