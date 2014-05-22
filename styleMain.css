@@ -65,7 +65,8 @@ footer { font-size: 1.3rem; }
 	[role="banner"]{ padding: 0 50% 10em 10%; text-align: right; position: relative; }
 
 	[role="article"], footer { padding: 0 30% 10em 10%; text-align: right; position: relative; }
-
+	
+	[role="article2"], footer { padding: 0 30% 10em 10%; text-align: right; position: relative; }/*******/
 	[role="banner"] { padding-top: 100px; padding-bottom: 3em; }
 
 		[role="banner"] h1 { font-size: 4.8rem; letter-spacing: 0; line-height: 0.8; }
@@ -86,6 +87,7 @@ footer { font-size: 1.3rem; }
 @media screen and (min-width: 1130px) {
 	[role="script"] { padding-left: 25%; }
 	[role="article"], [role="banner"] { padding-left: 25%; }
+	[role="article2"], [role="banner"] { padding-left: 25%; }/*******/
 
 	.design-selection { position: absolute; left: 5%; top: 30em; }
 		.design-selection ul { margin: 0; width: 100%; }
@@ -109,7 +111,7 @@ footer { font-size: 1.3rem; }
 	-webkit-animation-name: FADEY;
 	-webkit-animation-duration: 1s; 
 	-webkit-animation-timing-function: ease-in-out; 
-	-webkit-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1; 
 }
 
 
